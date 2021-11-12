@@ -13,7 +13,7 @@ const forecast = (lat, lon, callback) => {
                 body.current.weather_descriptions[0] + '.'
                 + " It's currently " + body.current.temperature
                 + " degrees out. It feels like "
-                + body.current.feelslike + " degrees out."
+                + body.current.feelslike + " degrees out. No i buziaczki oczywiscie :*** ^^"
             )
         }
     })
