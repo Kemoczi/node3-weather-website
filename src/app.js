@@ -22,15 +22,15 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About me',
+        title: 'O mnje',
         name: 'Tomasz Krajewski'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text',
-        title: 'Help',
+        helpText: 'Znikąd pomocy',
+        title: 'Rapomoc',
         name: 'Tomasz Krajewski'
     })
 })
@@ -45,7 +45,7 @@ app.get('', (req, res) => {
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
-            error: 'You must provide an address!'
+            error: 'Też nie wiesz?'
         })
     }
     geocode(req.query.address, (error, { latitude, longitude, location } = {}) => {
