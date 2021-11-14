@@ -37,7 +37,7 @@ app.get('/help', (req, res) => {
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather',
+        title: 'Pogodyn',
         name: 'Tomasz Krajewski'
     })
 })
