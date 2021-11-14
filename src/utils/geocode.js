@@ -5,7 +5,7 @@ const geocode = (address, callback) => {
 
     request({ url, json: true }, (error, { body } = {}) => {
         if (error) {
-            callback('Unable to connect to location services! (or you used polish diacritic character)', undefined)
+            callback('Coś się zesrało, spróbuj nie używać polskich znaków', undefined)
         } else if (body.features.length === 0) {
             callback('Unable to find location. Try another search.', undefined)
         } else {
